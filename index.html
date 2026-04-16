@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AFIDA-Watch — Auditable Agricultural Land Risk Triage</title>
+
+  <!-- Fonts (DoD-friendly, neutral) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="/src/index.js"></script>
+</head>
+
+<body>
+<header class="hero" id="top">
+  <div class="container">
+    <div class="topbar">
+      <div class="brand">
+        <div>AFIDA-Watch</div>
+        <div class="badge">UNCLASSIFIED // FOR OFFICIAL USE ONLY (customer-directed)</div>
+      </div>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="/portal.html">Metrics</a>
+        <a href="#methods">How It Works</a>
+        <a href="/checkout.html">Tiers</a>
+        <a href="/map.html">Analysis</a>
+        <a href="/geo-map.html">Map</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>Auditable Agricultural Land Risk Triage</h1>
+        <p class="subtitle">Transforms AFIDA holdings into reproducible risk flags, explainable tiers, and interagency triage outputs.</p>
+        <div class="clarifier">Designed to augment — not replace — existing AFIDA, CFIUS, force‑protection, and sanctions screening processes.</div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#pricing">View Risk Tiers</a>
+          <a class="btn secondary" href="#contact">Request Government Pilot</a>
+        </div>
+      </div>
+
+      <aside class="audit-card" aria-label="Audit stamp">
+        <p class="audit-title">Audit Snapshot</p>
+        <div class="mono">
+          <div><span class="k">Dataset:</span> <span class="v">afida_current_holdings_yr2024_clean.csv</span></div>
+          <div><span class="k">Dataset MD5:</span> <span class="v">021fdfc6456b6d51565fee8ba87c5bbf</span></div>
+          <div><span class="k">FlagSpecVersion:</span> <span class="v">v1.0</span></div>
+          <div><span class="k">ScoringSpecVersion:</span> <span class="v">v1.0</span></div>
+        </div>
+        <div class="audit-caption">Reproducible outputs. Deterministic logic. Version‑locked.</div>
+        <div class="hrnote">Build date: 2026-03-12 (UTC)</div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="metrics">
+    <div class="container">
+      <h2 class="section-title">Headline Metrics (2024)</h2>
+      
+    <div class="grid">
+      <div class="card">
+        <p class="metric">Total records (2024)</p>
+        <p class="value">49,548</p>
+      </div>
+      <div class="card">
+        <p class="metric">Any exposure flagged</p>
+        <p class="value">41,404 (83.6%)</p>
+      </div>
+      <div class="card">
+        <p class="metric">Any risk flagged</p>
+        <p class="value">29,734 (60.0%)</p>
+      </div>
+      <div class="card">
+        <p class="metric">Any flag (combined)</p>
+        <p class="value">42,267 (85.3%)</p>
+      </div>
+      <div class="card">
+        <p class="metric">Tier distribution — CRITICAL</p>
+        <p class="value">12</p>
+      </div>
+      <div class="card">
+        <p class="metric">Tier distribution — HIGH</p>
+        <p class="value">14,711</p>
+      </div>
+      <div class="card">
+        <p class="metric">Tier distribution — MEDIUM</p>
+        <p class="value">16,486</p>
+      </div>
+      <div class="card">
+        <p class="metric">Tier distribution — LOW</p>
+        <p class="value">11,058</p>
+      </div>
+      <div class="card">
+        <p class="metric">Tier distribution — NONE</p>
+        <p class="value">7,281</p>
+      </div>
+    </div>
+    
+      <p class="small">Tiering reflects deterministic flag logic applied uniformly across the dataset.</p>
+    </div>
+  </section>
+
+  <section id="methods">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="grid hiw">
+        
+        <div class="card">
+          <p class="metric">Inputs</p>
+          <p class="value">AFIDA Holdings (CSV) + AFIDA Code Keys (PDF)</p>
+        </div>
+        
+
+        <div class="card">
+          <p class="metric">Processing</p>
+          <p class="value">Deterministic Flags + Scoring Spec (v1.0)</p>
+        </div>
+        
+
+        <div class="card">
+          <p class="metric">Outputs</p>
+          <p class="value">Report + Triage Feed + County/State Map + Audit Pack</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <h2 class="section-title">What You Get (Risk‑Based Tiers)</h2>
+      <div class="grid tier-grid">
+        
+        <div class="card">
+          <div class="tier-pill">Tier 1</div>
+          <h3 class="tier-name">Auditable Intelligence Report</h3>
+          <p class="tier-title">Briefing + record-ready output</p>
+          <p class="price-line">Starting at $15K/year<span>(range $15K–$40K/year)</span></p>
+          <p class="range">Pricing reflects scope, cadence, and states/regions covered.</p>
+        </div>
+        
+
+        <div class="card recommended">
+          <div class="tier-pill">Tier 2</div>
+          <h3 class="tier-name">Triage Feed (Recommended)</h3>
+          <p class="tier-title">Machine-consumable risk outputs</p>
+          <p class="price-line">Starting at $40K/year<span>(range $40K–$120K/year)</span></p>
+          <p class="range">Pricing reflects scope, cadence, and states/regions covered.</p>
+        </div>
+        
+
+        <div class="card">
+          <div class="tier-pill">Tier 3</div>
+          <h3 class="tier-name">Online Triage Map</h3>
+          <p class="tier-title">County/state visualization for planning</p>
+          <p class="price-line">Starting at $120K/year<span>(range $120K–$250K/year)</span></p>
+          <p class="range">Pricing reflects scope, cadence, and states/regions covered.</p>
+        </div>
+        
+      </div>
+      <p class="small"><a href="#deliverables" style="text-decoration:underline;">See full deliverables →</a></p>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="container">
+      <h2 class="section-title">Map Preview (Triage Scope Only)</h2>
+      <div class="map-wrap">
+        <a href="/map.html" class="map-thumb-link" aria-label="View interactive risk tier map">
+          <div class="map-thumb">
+            <div class="map-preview-content">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+                <text x="200" y="95" text-anchor="middle" fill="#B9C4CE" font-family="IBM Plex Sans, sans-serif" font-size="18" font-weight="600">County/State Risk Tier Map</text>
+                <text x="200" y="125" text-anchor="middle" fill="#899AAA" font-family="IBM Plex Sans, sans-serif" font-size="14">Click to view interactive map</text>
+                <g opacity="0.3">
+                  <circle cx="100" cy="160" r="8" fill="#8B1E1E"/>
+                  <circle cx="150" cy="155" r="12" fill="#B85C2E"/>
+                  <circle cx="200" cy="150" r="10" fill="#7A8A3A"/>
+                  <circle cx="250" cy="155" r="14" fill="#3A6F8A"/>
+                  <circle cx="300" cy="160" r="9" fill="#B85C2E"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <div>
+          <a class="btn primary" href="/map.html">Open Triage Map</a>
+          <div class="disclaimer" style="margin-top:12px;">
+            <strong>Required disclaimer:</strong><br/>
+            County/state triage view; not dispatchable parcel locations without Verified Location (QA PASS).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="country-exposure">
+    <div class="container">
+      <h2 class="section-title">Foreign Ownership by Country of Origin (2024)</h2>
+      <p class="small" style="margin-bottom:16px;">Source: AFIDA 2024 dataset. Acreage and reported acquisition value aggregated by country of record. Click column headers to sort.</p>
+      <div class="ce-controls">
+        <input type="text" id="ce-search" class="ce-search" placeholder="Filter by country..." autocomplete="off" />
+        <div class="ce-toggle-group">
+          <button class="ce-toggle active" data-filter="all">All Countries</button>
+          <button class="ce-toggle" data-filter="value">Has Reported Value</button>
+        </div>
+      </div>
+      <div class="ce-table-wrap">
+        <table class="ce-table" id="ce-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-col="rank">#</th>
+              <th class="sortable" data-col="country">Country</th>
+              <th class="sortable sorted-desc" data-col="acres">Acres</th>
+              <th class="sortable" data-col="value">Reported Value (USD)</th>
+            </tr>
+          </thead>
+          <tbody id="ce-tbody"></tbody>
+        </table>
+      </div>
+      <p class="small ce-footer-note">Values of $0.00 indicate no acquisition price was reported to AFIDA (not necessarily zero-cost transactions).</p>
+    </div>
+  </section>
+
+  <section id="terms">
+    <div class="container">
+      <h2 class="section-title">Credibility & Limitations</h2>
+      <ul class="clean">
+        <li><strong>Decision support only; does not replace government authority.</strong></li>
+<li><strong>Outputs are advisory inputs intended to inform, not substitute for, statutory review or enforcement determinations.</strong></li>
+<li><strong>All outputs are reproducible via the Audit & Challenge Pack.</strong></li>
+<li><strong>Parcel-exact verification is a separate add-on service.</strong></li>
+<li><strong>Installation county match flags indicate county-level FIPS join only, NOT parcel-level proximity or distance to installations.</strong> County-level screening is suitable for triage routing; field verification required for regulatory use. Installation data sourced from DOT BTS / DoD DISDI (FY2024).</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="form" aria-label="Contact form">
+          <h2 class="section-title" style="margin-top:0;">Contact</h2>
+
+          <label for="org">Organization type</label>
+          <select id="org" name="org">
+            <option>DOD</option>
+            <option>Federal (non-DOD)</option>
+            <option>State / Local</option>
+            <option>Financial institution</option>
+            <option>Prime / integrator</option>
+            <option>Other</option>
+          </select>
+
+          <label for="use">Intended use</label>
+          <select id="use" name="use">
+            <option>Force-protection planning</option>
+            <option>Screening / triage workflow</option>
+            <option>Compliance / sanctions review</option>
+            <option>Research / analysis</option>
+          </select>
+
+          <label>States / regions of interest</label>
+          <div class="region-picker" id="region-picker">
+            <div class="region-tags" id="region-tags">
+              <input class="region-search" id="region-search" type="text" placeholder="Search states or counties..." autocomplete="off" />
+            </div>
+            <div class="region-dropdown" id="region-dropdown" hidden>
+              <div class="region-scope-tabs">
+                <button class="region-tab active" data-scope="states">States</button>
+                <button class="region-tab" data-scope="counties">Counties</button>
+              </div>
+              <div class="region-options" id="region-options"></div>
+            </div>
+          </div>
+          <input type="hidden" id="states" name="states" />
+
+          <label for="note">Notes</label>
+          <textarea id="note" name="note" placeholder="Cadence, scope, delivery format, security constraints..."></textarea>
+
+          <label for="email">Your Email (optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@agency.gov" />
+
+          <button class="btn primary" type="button" id="contact-submit-btn">Request Technical Brief</button>
+          <div id="contact-feedback" style="display:none; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;"></div>
+          <div class="hrnote">No claims of enforcement authority. Advisory decision support only.</div>
+        </div>
+
+        <div>
+          <h2 class="section-title">Links</h2>
+          <div class="footer-links">
+            <a href="#methods">Methods & Auditability</a>
+<a href="#pricing">Pricing</a>
+<a href="#auditpack">Audit Pack (if gated)</a>
+<a href="#terms">Terms / Disclaimers</a>
+          </div>
+          <p class="small" id="deliverables">
+            Deliverables include report, triage feed, county/state map, and an audit/challenge pack
+            aligned to versioned specifications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
